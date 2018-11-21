@@ -26,14 +26,18 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
+  width: 1300px;
   height: 110px;
   margin: 0 auto;
-
+}
+#search{
+  padding: 5px;
+  border-left: 2px solid black;
 }
 ul > li{
   display: inline-block;
-  margin-left: 20px;
+  padding: 5px 10px 5px 20px;
+  border-left: 2px solid black;
 }
 .main{
   padding-top: 140px;
@@ -91,7 +95,7 @@ ul > li{
   margin: 45px 45px 0;
 }
 .about-item{
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .item-img{
   display: inline-block;
@@ -137,12 +141,49 @@ ul > li{
   text-align: center;
   color: #fff;
   background: #4b5568 url(img/policy-bg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 114px 0;
 }
 #policy p {
   font-size: 20px;
   line-height: 31px;
   margin: 0 auto;
   width: 40%;
+}
+#policy h1{
+  padding-bottom: 65px;
+}
+.purchases__item{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  margin-bottom: 30px;
+}
+.purchases__item:nth-child(odd){
+  flex-direction: row-reverse;
+}
+#right-item {
+  margin-left: 25px;
+  margin-right: -90px;
+}
+#purchases > h1{
+  text-align: center;
+  padding: 50px 0 70px;
+}
+.purchases__info{
+  overflow: hidden;
+  padding: 40px;
+  line-height: 22px;
+  height: 240px;
+  margin: 25px;
+  margin-left: -90px;
+  background-color: #fff;
+}
+.purchases__info > h2{
+  padding-bottom: 45px;
 }
 .img-container{
   height: 56px;
@@ -164,6 +205,7 @@ ul > li{
   width: 990px;
 }
 .contacts{
+  padding: 45px 0px;
   background-image: url(img/cocntacts-bg.png);
   background-color: #4b5568;
   background-position: center center;
@@ -176,21 +218,6 @@ ul > li{
   color: #fff;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .clear{
   clear: both;
 }
