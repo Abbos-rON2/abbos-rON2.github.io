@@ -1,0 +1,367 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	font-family: "MagistralC", sans-serif
+
+@font-face
+	font-family: 'MagistralC'
+	src: url('fonts/MagistralC.woff2') format('woff2')
+	font-weight: normal
+	font-style: normal
+a 
+	text-decoration: none
+.clear
+	clear: both
+	content: ''
+html
+	background-color: #D3D3D3
+body
+	margin: 0 auto
+	max-width: 1920px
+	background-color: #fff
+.clear
+	clear: both
+	content: ''
+header
+	width: 1170px
+	height: 110px
+	margin: 0 auto
+	img
+		vertical-align: middle
+	&:before
+		content: ''
+		height: 100%
+		display: inline-block
+		vertical-align: middle
+
+	#wrapper
+		font-weight: bold
+		vertical-align: middle
+		display: inline-block
+		nav
+			margin-left: 21px	
+			padding-top: 30px
+			border-top: 1px solid #eeeeee
+			a
+				// position: relative
+				// &::after
+				// 	height: 2px
+				// 	width: 20px
+				// 	background-color: #97b61d
+				// 	content: ' '
+				// 	position: absolute
+				// 	bottom: 46px
+				&:not(:last-child)
+					padding-right: 38px
+				&:not(:first-child):before
+					content: '•'
+					position: relative
+					right: 20px
+				&:first-child
+					padding-left: 10px
+		#search-box
+			float: right
+	a
+		// padding-right: 38px	
+		color: #3a3a3a
+
+#section-1
+	width: 100%
+	height: 770px
+	background-image: url(img/first-section-bg.png)
+	background-position: center center
+	padding-top: 115px
+	#caption
+		letter-spacing: 0.2px
+		width: 1100px
+		height: 340px	
+		background-color: rgba(0,0,0, 0.6)
+		color: #fff
+		#caption-wrapper
+			height: 100%
+			padding: 40px 0 40px 380px
+			h1
+				font-size: 50px
+				line-height: 40px
+			img
+				padding: 50px 0 35px
+				opacity: 0.5
+			p
+				font-size: 1.3vw
+				width: 85%
+				font-weight: 400
+				line-height: 30px
+				font-size: 20px
+				margin-bottom: 40px
+
+.btn
+	display: inline-block
+	width: 170px
+	height: 45px
+	border: 1px solid #fff
+	color: #fff
+	vertical-align: center
+	text-align: center
+	line-height: 45px
+	font-weight: bold
+	letter-spacing: 1px
+.section-2
+	background-color: #fff
+	width: 1170px
+	margin: -225px auto 0
+	.about-item:not(:last-child)
+		margin-bottom: 24px
+	.about
+		height: 450px
+		.right-block
+			padding: 61px 43px
+			vertical-align: top
+			width: 57%
+			display: inline-block
+			& > img
+				margin: 28px 0 24px
+			& > h1
+				color: #28374b
+				font-size: 35px
+				font-weight: 400
+				line-height: 27px
+			.about-icon
+				display: inline-block
+				vertical-align: top
+				width: 50px
+				height: 40px
+				margin-right: 10px
+			.about-info
+				width: 87%
+				display: inline-block
+				h1
+					margin-bottom: 5px
+					font-size: 17px
+				p
+					font-size: 14px
+					line-height: 22px
+	.project
+		margin-bottom: 50px
+		.project-header
+			padding: 27px 0 28px
+			background-color: #4b5568
+			h1 
+				font-family: sans-serif
+				text-align: center
+				text-transform: uppercase
+				color: #fff
+				font-size: 18px
+		.project-item
+			color: #5d5e5d
+			float: left
+			width: 33.33333%
+			background-color: #f5f5f5
+			padding: 34px 0
+			text-align: center
+			&:hover
+				background-color: #ededed
+			.project-icon
+				display: inline-block
+				width: 16%
+			.project-info
+				display: inline-flex
+				width: 70%
+				align-items: center
+				vertical-align: top
+				height: 42px
+.section-3
+	height: 460px
+	max-width: 100%
+	color: #fff
+	text-align: center
+	background: #4b5568 url(img/policy-bg.png)
+	background-position: center center
+	background-size: cover
+	padding-top: 110px
+	.policy-wrapper
+		width: 745px
+		margin: 0 auto
+		h1
+			font-size: 35px
+			font-weight: 400
+			font-size: 35px
+			text-transform: uppercase
+		img
+			padding: 34px 0px 30px
+
+		p 
+			letter-spacing: 0.5px
+			font-size: 20px
+			font-weight: 700
+			line-height: 31p
+.section-4
+	background-image: url(img/bg-bg.png)
+	background-size: 100%
+	background-size: cover
+	background-position: 50% 52%
+	color: #282828
+	& > img
+		display: block
+		margin: auto
+		padding: 0px 0px 35px
+		float: none
+	.purchases 
+		img
+			float: left
+	& > h1
+		text-align: center
+		font-size: 35px
+		font-weight: 400
+		text-transform: uppercase
+		padding: 50px 0 34px
+	.purchases-item
+		height: 300px
+		display: block
+		margin: 0 auto
+		width: 1170px
+		&:not(:last-child)
+			margin-bottom: 30px
+		.purchases-info
+			background-color: #eee
+			float: left
+			padding: 30px 30px 30px 0
+			height: 300px
+			max-width: 700px
+			.info-content
+				background-color: #fff
+				height: 240px
+				padding: 30px
+				width: 740px
+				margin-left: -70px	
+				z-index: 10
+				h2
+					font-size: 20px
+					padding-bottom: 17px
+				span
+					color: #888888
+					font-family: sans-serif
+					font-size: 13px
+					font-weight: 400
+					line-height: 20px
+				p 
+					margin-top: 15px
+					color: #282828
+					font-family: sans-serif
+					font-size: 13px
+					font-weight: 400
+					line-height: 22px
+.section-5
+	padding: 50px 0px 47px
+	background-image: url(img/cocntacts-bg.png)
+	background-color: #4b5568
+	background-position: center center
+	background-size: cover
+	color: #fff
+	h1 
+		font-size: 35px
+		text-transform: uppercase
+		text-align: center
+		font-weight: 400
+	& > img
+		text-align: center
+		padding: 35px 0px 40px
+		display: block
+		margin: 0 auto
+	.contact-wrapper
+		width: 998px
+		margin: 0 auto
+	.contact-icon
+		margin: 0 auto
+		width: 56px
+		height: 56px
+	.contact-item
+		text-align: center
+		width: 330px
+		height: 100px
+		display: inline-block
+		margin: 0	
+		h3
+			margin: 21px 0px 27px
+			font-weight: 400	
+	.contact-item:first-child span 
+		font-size: 24px
+
+footer
+	color: #fff
+	height: 75px
+	background-color: #2c2c2c
+	.footer-wrapper
+		line-height: 16px
+		width: 1170px
+		margin: 0 auto
+		padding: 20px 0
+		*
+			display: inline-block
+.right	 
+	width: 49.8%
+	text-align: right
+.left	
+	width: 49.8%
+	text-align: left 
+
+.btn-light
+	display: inline-block
+	margin-top: 18px
+	width: 165px
+	height: 40px
+	border: 1px solid #eeeeee
+	color: #000	
+	vertical-align: center
+	text-align: center
+	line-height: 40px
+	font-weight: 700
+	letter-spacing: 1px
+	text-transform: uppercase
+.btn-div
+	width: 1170px
+	margin: 0 auto
+	display: flex
+	justify-content: flex-end 
+.purchases-btn
+	width: 160px
+	height: 40px
+	background-color: #fff
+	border: 1px solid #eee
+	text-transform: uppercase
+	font-weight: bold
+	margin: 30px 0 50px 0  
+
+#img-right
+	float: right
+
+#right-info
+	float: right
+	padding: 30px 0 30px 30px
+
+#info-right
+	margin-left: 0
+
+.purchases-item:last-child
+	margin-bottom: 0
+
+#search
+	padding: 2px
+	padding-left: 20px
+	border-left: 1px solid #97b61d
+.search-box
+	padding-bottom: 10px
+
+.search-box 
+	a
+		&:not(:last-child)
+			margin-right: 17px
+		font-size: 12px
+
+.search-box 
+	float: right
+	a
+		&:hover
+			color: #00963f !important
+.img-footer
+	height: 35px
